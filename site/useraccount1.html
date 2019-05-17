@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Simple Login Page</title>
+	<link rel="stylesheet" href="useraccount.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="account.js" defer ></script>
+</head>
+<body>
+
+<div    id="RestaurentUser" >
+	
+<button  v-if="reslogin==false" class="pure-button "  onclick="vueinst1.reslogin = true;">Restaurent User </button>
+
+<div   id=" Restaurent SignUP">
+
+<button    v-if="reslogin==true" v-elseif="ressignup"   class="pure-button "  onclick="vueinst1.ressignup = true; " >Restaurent<br>Sign Up </button>
+
+
+<div   v-if="ressignup==true "   class=" User Login">
+
+
+
+
+	<h3> Restaurent Sign Up </h3>
+	<form>
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Restaurent name">
+			<span><i class="fa fa-bank" style="font-size:18px"></i></span>
+		</div>
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Opening times">
+			<span><i class="fa fa-vcard" style="font-size:15px"></i></span>
+		</div>
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Email Address ">
+			<span><i class="fa fa-at" style="font-size:18px"></i></span>
+		</div>
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Phone number">
+			<span><i class="fa fa-mobile-phone" style="font-size:24px"></i></span>
+		</div>
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Address">
+			<span><i class="fa fa-address-book-o" style="font-size:18px"></i></span>
+		</div>
+		
+
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Username">
+			<span><i class="fa fa-user" aria-hidden="true"></i></span>
+		</div>
+		<div class="inputValue">
+			<input type="password" name="" placeholder="Password">
+			<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+		</div>
+		<input type="submit" name="" value="Sign Up">
+	</form>
+</div>
+</div>
+ 
+<div   id=" Restaurentlogin" >
+
+
+	<button   v-if="reslogin==true" v-elseif="reslog"  class="pure-button"    onclick="vueinst1.reslog = true;" >Restaurent<br>Login </button>
+
+
+
+	<div   v-if="reslog==true"  class=" User Login">   
+
+	<h3> Restaurent Login </h3>
+	<form>
+		<div class="inputValue">
+			<input type="text" name=""  placeholder="Username">
+			<span><i class="fa fa-user" aria-hidden="true"></i></span>
+		</div>
+		<div class="inputValue">
+			<input type="password" name="" placeholder="Password">
+			<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+		</div>
+		<input type="submit" name="" value="Login">
+	</form>
+	<a href="#">Forget Password</a>
+	</div>
+	
+</div>
+</div>
+
+
+</body>
+</html>
