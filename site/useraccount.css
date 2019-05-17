@@ -1,0 +1,177 @@
+body{
+	margin: 20;
+	padding: 20;
+	background-image: url(user.jpg);
+	font-size: 100px;
+	font-family: monospace;
+
+}
+.Login
+{
+	position: absolute;
+	font-size: 20px;
+	width: 400px;
+	min-height: 200px;
+	background: white;
+	border-radius: 25px;
+	padding: 50px;
+	box-sizing: border-box;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+
+}
+ .Login a{
+ 	color: black;
+ 	font-size: 20px;
+ 	font-weight:bold;
+ 	font-style: italic;
+ 	text-align: center;
+ 	display: block;
+ }
+  .Login input[type="submit"]
+ {
+ 	border:none;
+ 	outline:none;
+ 	background: green;
+ 	color: white;
+ 	border-radius: 25px;
+ 	cursor: pointer;
+ 	height:50px;
+ 	font-size:20px;
+ 	
+ }
+
+
+.user{
+margin: auto;
+display: block;
+margin-bottom: 30px;
+
+}
+h3{
+	margin: auto;
+	padding: 0 	10 20px;
+	color: black;
+	text-align: center;
+}
+
+.Login input{
+	width: 100%;
+	margin-bottom: 25px;
+
+}
+.Login input[type="text"]
+{
+    border:none;
+	border-bottom: 3px solid black;
+	outline:none;
+	padding-left: 20px;
+	box-sizing: border-box;
+	height:50px;
+	color: black;
+	background: relative;
+	font-size:20px;
+	}
+.Login input[type="password"]
+
+
+{
+	border:none;
+	border-bottom: 3px solid black;
+	outline:none;
+	padding-left: 20px;
+	box-sizing: border-box;
+	height:50px;
+	color: black;
+	background: relative;
+	font-size:20px;
+}
+
+.Login input[type="text"]:focus
+{
+	border-bottom: 2px solid green;
+}
+.Login input[type="password"]:focus
+
+{
+border-bottom: 2px solid green;
+}
+
+.inputValue {
+	position: relative;
+
+}
+
+ .inputValue span
+ {
+ 	position:absolute;
+ 	top: 10px;
+ 	color: black;
+ }
+
+.pure-button{
+	border: 1px solid white;
+	background: none;
+	padding: 10px 20px;
+	font-size: 30px;
+	font-family: "montserrat";
+	cursor: pointer;
+	transition:0.8s;
+	position:relative;
+	overflow: hidden;	
+
+}
+
+.pure-button:focus{
+	outline:none;
+
+}
+.pure-button:before{
+	content: '';
+	display:block;;
+	position: absolute;
+	background: rgba(255,255,255,.5);
+	width:60px;
+	height: 100%;
+	left:0;
+	top:0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skewX(-15deg) ;
+}
+
+.pure-button:after{
+
+	content:'';
+	display: block;
+	position:absolute;
+	background:rgba(255,255,255,.2);
+	width:30px;
+	height:100%;
+	left:30px;
+	top:0;
+	opacity:0;
+	filter: blur(30px);
+	transform: translate(-100px) skewX(-15deg) ;
+
+}
+.pure-button:hover{
+	background:white;
+	cursor:pointer;
+}
+
+.pure-button:hover:before{
+	transform: translateX(300px) skewX(-15deg);
+	opacity:.6;
+	transition:.7s;
+
+}
+.pure-button:hover:after{
+	transform: translateX(300px) skewX(-15deg);
+	opacity:.6;
+	transition:.7s;
+
+}
+
